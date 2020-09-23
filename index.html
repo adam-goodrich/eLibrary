@@ -1,0 +1,44 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Adam's Library</title>
+        <meta name="Adam's Library" content="Adam's Library">
+        <link rel="Book icon" href="icon.png">        
+        <link rel="stylesheet" href="style.css">    
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2&family=Roboto:wght@300&display=swap" rel="stylesheet">  
+    </head>
+    <body>
+        <div class="top-container">
+            <h1>My Library</h1>
+        </div>
+        <div class="header" id="myHeader">
+            <button type="button" class="collapsible">ADD BOOK</button>
+            <div class="content">
+            <form>
+                <br>
+                <label for="fname">Title:</label><br>
+                <input type="text" id="title"><br>
+                <label for="lname">Author:</label><br>
+                <input type="text" id="author"><br>
+                <label for="lname">Page Count:</label><br>
+                <input type="number" id="pageNumber" value=""><br>
+                <label for="lname">Image URL:</label><br>
+                <input type="text" id="image" value=""><br><br>
+                <form>     
+                    <input type="radio" id="read" value="read" name="read">       
+                    <label for="read">read</label>
+                    <input type="radio" id="unread" value="unread" name="read" checked>       
+                    <label for="unread">unread</label>
+                </form>
+                <br>
+                <button type="button" value="submit" id="submit"">SUBMIT</button>
+                <br>
+            </form>
+            </div>
+        </div>
+        <div class="container"></div>
+        <script src="logic.js"></script>
+    </body>
+</html>
