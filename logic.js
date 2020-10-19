@@ -57,13 +57,18 @@ function removeAllChildNodes(parent) {
     }
 };
 
-function Book(title, author, pages, read, image) {
-    this.image = image
-    this.title = title;
-    this.author = author;
-    this.pages = pages;
-    this.read = read;
-};
+class Book {
+    constructor(title, author, pages, read, image) {
+        this.image = image
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+}
+
+
+
 
 function addBookToLibrary(title, author, pages, read, image) {
     if (title == "") {
